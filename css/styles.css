@@ -38,7 +38,9 @@ p {
 	font-weight: 300;
 	font-size: 1.2rem;
 }
-
+li {
+	align-self: center;
+}
 
 
 /* ================================= 
@@ -138,7 +140,7 @@ section {
 }
 .skills-description {
 	padding: 5% 0;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 
@@ -151,6 +153,7 @@ footer {
 	margin-top: 10px;
 	background-color: var(--mygray);
 	color: white;
+	box-shadow: inset 0 0 1em rgba(0, 0, 0, .25);
 }
 .contact {
 	margin: auto;
@@ -177,12 +180,15 @@ footer ul {
 	justify-content: space-between;
 	padding: 0 5%;
 }
+.footer-info p {
+	font-size: 1.5em;
+}
 .footer-name,
 .footer-back-top {
 	display: flex;
 }
 .footer-name {
-	font-size: 1.1em;
+	/* font-size: 1.1em; */
 	text-transform: none;
 	display: flex;
 	align-items: center;
@@ -304,8 +310,6 @@ footer ul {
   }
 	.footer-list {
 		padding: 0 5%;
-		align-items: center;
-		
 	}
 	.footer-name {
 		margin-right: auto;
