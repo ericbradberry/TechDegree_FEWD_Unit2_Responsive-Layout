@@ -168,7 +168,7 @@ footer ul {
 .footer-text {
 	padding: 0 10% 5%;
 	font-weight: 300;
-	font-size: 1.8em;
+	font-size: 1.2em;
 }
 .contact,
 .footer-text,
@@ -184,7 +184,7 @@ footer ul {
 	padding: 0 5%;
 }
 .footer-info p {
-	font-size: 1.8em;
+	font-size: 1.2em;
 	font-family: 'League Spartan',sans-serif;
 }
 .footer-name,
@@ -264,12 +264,18 @@ footer ul {
 	.footer-list {
 		padding: 0 5%;
 		align-items: center;
-		
+	}
+	.footer-text {
+		padding: 0 10% 5%;
+		font-weight: 300;
+		font-size: 1.8em;
 	}
 	.footer-name {
 		margin-right: auto;
 		font-size: 1.5em;
-	
+	}
+	.footer-info p {
+		font-size: 1.5em;
 	}
 	.footer-back-top {
 		display: none;
@@ -324,10 +330,13 @@ footer ul {
 	.footer-list {
 		padding: 0 5%;
 	}
-	.footer-name {
-		margin-right: auto;
-		font-size: 1.5em;
-	
+	.footer-text {
+		padding: 0 10% 5%;
+		font-weight: 300;
+		font-size: 1.8em;
+	}
+	.footer-info p {
+		font-size: 1.8em;
 	}
 	.footer-back-top {
 		display: none;
