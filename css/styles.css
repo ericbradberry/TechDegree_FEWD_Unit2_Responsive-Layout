@@ -2,30 +2,33 @@
   Base Styles
 ==================================== */
 :root {
-	--mygray: rgb(116, 116, 116);
+	--mygray: rgb(94, 94, 94);
 }
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 body {
-	width: 90%;
-	margin: 0 auto;
+	padding: 0 auto;
 	font-family: 'League Spartan', sans-serif;
 	color: var(--mygray);
 	hyphens: auto;
 }
-main {
-	width: 100%;
-	margin: 0 auto;
+.wrapper {
+	margin: 0 5%;
+}
+header {
+	margin-top: 5%;
 }
 img {
 	width: 100%;
-	padding: 0;
+	height: auto;
 }
-ul {
-	padding: 0;
-}
+.nav-name {
+	text-align: center;
 
+}
 h3 {
 	font-weight: 400;
 	
@@ -35,17 +38,25 @@ p {
 }
 
 
-
 /* ================================= 
   Nav Bar
 ==================================== */
 
-.header-main {
-	display: block;
+
+.nav-list {
+	padding-top: 5%;
+}	
+.nav-main {
 	text-align: center;
-	margin: 5% auto;
-	background-color: rgb(250, 250, 250);
+	margin-bottom: 35px;
 }
+.nav-main li {
+	font-size: 1em;
+	padding: 10px;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
 header a,
 .back-to-top {
 	text-decoration: none;
@@ -54,61 +65,69 @@ header a,
 	font-weight: 700;
 	margin-bottom: 30px;
 }
-.name {
+
+.nav-name {
 	font-size: 1.5em;
 	margin: 0;
 	color: var(--mygray);
 }
-.nav li {
-	font-size: .8em;
-	background-color: rgb(248, 248, 248);;
-	padding: 10px;
-	margin: 5px;
-	text-transform: uppercase;
-	list-style-type: none;
-}
+
 
 /* ================================= 
   Main
 ==================================== */
 
+.intro {
+	display: block;
+	text-align: center;
+	margin-bottom: 55px;
+}
 .intro-img {
-	width: 100%;
+	width: 65%;
 	margin: 0 auto;
 }
 .intro-text {
-	line-height: 1.2;
+	line-height: 1.3;
+	font-size: 1.15em;
+	padding: 20px;
 }
-.section {
-
-	font-size: .8em;
+section {
+	font-size: 1em;
 	font-weight: 700;
 	text-align: center;
-	text-transform: uppercase;
-	padding: 10px 0;
-	
-	
+	padding: 5% 0 5% 0;
 }
 
 .container {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
 	padding: 0;
+	align-items: center;
+	justify-content: center;
 	
 }
-.item-box {
+.container-box {
 	padding: 15px 0;
 }
 
-.item-title {
-	font-size: 1.1em;
+.container-title {
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	/* text-transform: uppercase; */
+	padding: 5% 0 5% 0;
 }
-.item-description {
-	margin: 5%;
+.container-description {
+	margin: 2.5% 5%;
 }
-
+.skills,
+.portfolio {
+	margin-top: 35px;
+	text-transform: uppercase;
+}
 .skills-img {
 	width: 70%;
 }
@@ -116,7 +135,7 @@ header a,
 	text-align: center;
 }
 .skills-description {
-	width: 90%;
+	padding: 5% 0;
 }
 
 
@@ -125,167 +144,174 @@ header a,
 ==================================== */
 
 footer {
-	display: inline-block;
 	width: 100%;
-	text-align: center;
-	margin-top: 35px;
-
+	padding-top: 25px;
+	margin-top: 10px;
+	background-color: var(--mygray);
+	color: white;
 }
-.footer-email {
+footer li {
+	display: inline;
+}
+footer ul {
+	height: 4em;
+}
+.contact {
+	margin: auto;
+	width: 100%;
+	font-size: .8em;
+	text-transform: uppercase;
+}
+.footer-text {
+	padding: 5% 5%;
+	font-size: 1.15em;
+	font-weight: 300;
+}
+.contact,
+.footer-text,
+.footer-info {
+	text-align: center;
+}
+.email {
 	margin-bottom: 60px
 }
-.footer p {
-	font-size: 1em;
-	padding: 0 10%;
-	margin: 5%;
+.footer-list {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-name,
+.footer-back-top {
+	display: flex;
+}
+.footer-name {
+	font-size: 1.1em;
+	text-transform: none;
+	display: flex;
+	align-items: center;
+	padding: 10px;
 }
 .footer-nav a {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 5px;
 	list-style-type: none;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: var(--mygray);
-}
-.footer-list {
-	display: inline;
-	text-align: right;
-}
-.footer-end ul {
-	display: inline;
-}
-
-.contact {
-	margin: auto;
-	width: 90%;
-	background-color: rgb(233, 232, 177);
-	font-size: .8em;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 10px 0;
-	box-shadow: 0 0 5px .1px;
-
-}
-.back-to-top {
-	text-transform: uppercase;
-	font-size: .5em;
 	color: white;
-	background-color: var(--mygray);
-	text-align: right;
 }
+
+.phone,
+.email {
+	margin: 1em;
+}
+.email {
+	padding-bottom: 1.5em;
+}
+
 .footer-home,
 .footer-portfolio,
 .footer-skills,
 .footer-contact {
 	display: none;
 }
-.footer-nav {
-	display: inline;
+#skills-div {
+	margin-bottom: 10%;
 }
-.footer-text {
 
-}
 /* ================================= 
  Media Queiries
 ==================================== */
 @media (min-width: 768px) {
-	
-
-	h1 {
-		text-align: center;
-	} 
-	.nav {
-			display: flex;
-			justify-content: center;
-			width: 100%;
-	}
-	.name {
-		margin-right: auto;
-	}
 	.nav-list {
-		justify-content: flex-end;
-	}
-	.header-main {
-		text-align: left;
-		margin: 5% auto;
-		background-color: rgb(250, 250, 250);
+		display: flex;
+		justify-content: center;
 	}
 	.intro {
 		display: flex;
-		/* width: 100%; */
+		margin: 5%;
 	}
-	.intro-img {
+	.intro img {
 		order: 2;
-		width: 100%;
+		width: 40%;
+		height: auto;
 	}
 	.intro-text {
-		font-size: 1.5rem;
-		padding-right: 3% ;
+		text-align: left;
+	}
 	
+	.footer-home,
+	.footer-portfolio,
+	.footer-skills,
+	.footer-contact {
+		display: inline;
+  }
+	.footer-list {
+		padding: 0 5%;
+		align-items: center;
+		
+	}
+	.footer-name {
+		margin-right: auto;
+	
+	}
+	.footer-back-top {
+		display: none;
 	}
 	.container {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
+	}
+	.container-box {
 		flex-basis: 50%;
-		justify-content: center;
+		padding: 1%;
+	
 	}
-	.item {
-		width: 50%;
-	}
-	.item img{
-		width: 100%;
-	}
-.footer-home,
-.footer-portfolio,
-.footer-skills,
-.footer-contact {
-	display: inline;
-}
-.footer-back-top {
-	display: none;
-}	
+
 }
 
 @media (min-width: 1024px) {
-	h1 {
-		text-align: left;
-	} 
-	.nav {
-		width: 100%;
-	}
-	nav ul {
-		justify-content: flex-end;
-	}
-	.name {
-		margin-right: auto;
-	}
 	.nav-list {
-		/* justify-content: flex-end; */
-	}
-	.header-main {
-		text-align: left;
-		margin: 5% auto;
-		background-color: rgb(250, 250, 250);
+		display: flex;
+		justify-content: center;
 	}
 	.intro {
 		display: flex;
-		width: 100%;
+		margin: 5%;
 	}
-	.intro-img {
+	.intro img {
 		order: 2;
+		width: 40%;
+		height: auto;
 	}
 	.intro-text {
-		font-size: 1.5rem;
+		text-align: left;
+	}
+	
+	.footer-home,
+	.footer-portfolio,
+	.footer-skills,
+	.footer-contact {
+		display: inline;
+  }
+	.footer-list {
+		padding: 0 5%;
+		align-items: center;
+		
+	}
+	.footer-name {
+		margin-right: auto;
+	
+	}
+	.footer-back-top {
+		display: none;
 	}
 	.container {
 		display: flex;
 		flex-wrap: wrap;
-		flex-basis: 50%;
-		justify-content: center;
 	}
-	.item {
-		width: 33%;
-	}
-	.item img{
-		width: 100%;
-	
+	.container-box {
+		width: 50%;
 	}
 }
